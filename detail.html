@@ -1,0 +1,111 @@
+<!-- detail.html : ③ 車両詳細（車紹介ページ.jpg に忠実） -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ホンダ N-BOX カスタム｜車両詳細｜オートガレージ</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <svg viewBox="0 0 48 24" class="logo-car" aria-hidden="true"><path d="M3 18c0-1 1-2 2-2h2l3-6c.5-1 1.5-2 3-2h14c1.5 0 2.8.8 3.6 2l3.4 6h2c1 0 2 1 2 2v2h-4a3 3 0 0 1-6 0H13a3 3 0 0 1-6 0H3v-2z"/></svg>
+      <span class="logo-text">オートガレージ</span>
+    </a>
+    <div class="header-cta">
+      <a href="tel:0120229238" class="tel"><span class="tel-icon">📞</span>0120-22-9238</a>
+      <a href="reserve.html" class="btn btn-amber btn-sm">来店予約</a>
+      <label for="navToggle" class="nav-toggle" aria-label="メニューを開閉">☰</label>
+    </div>
+  </div>
+  <input type="checkbox" id="navToggle" class="nav-checkbox">
+  <nav class="subnav"><div class="container subnav-inner">
+    <a href="index.html">トップ</a>
+    <a href="inventory.html" class="is-current">在庫一覧</a>
+    <a href="reasons.html">選ばれる理由</a>
+    <a href="flow.html">ご利用の流れ</a>
+    <a href="store.html">店舗紹介</a>
+    <a href="reserve.html">来店予約</a>
+    <a href="inquiry.html">在庫問い合わせ</a>
+  </div></nav>
+</header>
+
+<section class="detail">
+  <div class="container">
+    <div class="detail-title">
+      <h1>ホンダ N-BOX カスタム</h1>
+      <div class="detail-price">総額 <b>128万円</b></div>
+    </div>
+
+    <div class="detail-top">
+      <!-- ギャラリー -->
+      <div>
+        <div class="gallery-main">
+          <img src="img/detail_main.jpg" alt="ホンダ N-BOX カスタム 外装">
+        </div>
+        <div class="gallery-thumbs">
+          <img src="img/detail_th1.jpg" alt="内装">
+          <img src="img/detail_th2.jpg" alt="正面">
+          <img src="img/detail_th3.jpg" alt="後方">
+          <div>　</div>
+        </div>
+      </div>
+
+      <!-- お支払い総額 -->
+      <div class="pay-box">
+        <h3>お支払い総額</h3>
+        <div class="pay-row"><span>車両本体価格</span><span>124.5万円</span></div>
+        <div class="pay-row"><span>諸費用</span><span>3.5万円</span></div>
+        <div class="pay-total"><span>総額</span><b>128万円</b></div>
+        <a href="reserve.html" class="btn btn-amber btn-block">来店予約する</a>
+        <a href="inquiry.html" class="btn btn-amber-outline btn-block" style="color:var(--amber)">この車を問い合わせる</a>
+      </div>
+    </div>
+
+    <!-- スペック -->
+    <div class="spec-wrap">
+      <h2 class="sub-title" style="text-align:left">車両スペック</h2>
+      <div class="spec-grid">
+        <table>
+          <tr><th>年式</th><td>2020年</td></tr>
+          <tr><th>走行距離</th><td>3.5万km</td></tr>
+          <tr><th>車検</th><td>2026年12月</td></tr>
+          <tr><th>排気量</th><td>660cc</td></tr>
+        </table>
+        <table>
+          <tr><th>ミッション</th><td>CVT</td></tr>
+          <tr><th>修復歴</th><td>なし</td></tr>
+          <tr><th>ボディカラー</th><td>パールホワイト</td></tr>
+          <tr><th>乗車定員</th><td>4名</td></tr>
+        </table>
+      </div>
+
+      <h2 class="sub-title" style="text-align:left">装備・オプション</h2>
+      <div class="equip">
+        <span>バックカメラ</span><span>両側スライドドア</span><span>ETC</span><span>スマートキー</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-info">
+      <h3>店舗案内</h3>
+      <p>オートガレージ</p>
+      <p>所在地　〒176-0001 東京都練馬区練馬4-12-8（架空）</p>
+      <p>営業時間　10:00〜19:00</p>
+      <p>電話　0120-22-9238</p>
+      <p>定休日　水曜日</p>
+    </div>
+    <div class="footer-photo"><img src="img/店舗紹介.jpg" alt="店舗外観"></div>
+    <div class="footer-map"><iframe src="https://maps.google.com/maps?q=35.7357,139.6539&z=15&output=embed" title="店舗所在地（架空）" loading="lazy"></iframe></div>
+  </div>
+  <div class="copyright">© オートガレージ All rights reserved.　※これは架空店舗の制作サンプルです</div>
+</footer>
+
+</body>
+</html>

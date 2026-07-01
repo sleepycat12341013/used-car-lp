@@ -1,0 +1,87 @@
+<!-- store.html : ⑤ 店舗紹介・会社案内（店舗紹介.jpg に忠実） -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>店舗紹介・会社案内｜オートガレージ</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <svg viewBox="0 0 48 24" class="logo-car" aria-hidden="true"><path d="M3 18c0-1 1-2 2-2h2l3-6c.5-1 1.5-2 3-2h14c1.5 0 2.8.8 3.6 2l3.4 6h2c1 0 2 1 2 2v2h-4a3 3 0 0 1-6 0H13a3 3 0 0 1-6 0H3v-2z"/></svg>
+      <span class="logo-text">オートガレージ</span>
+    </a>
+    <div class="header-cta">
+      <a href="tel:0120229238" class="tel"><span class="tel-icon">📞</span>0120-22-9238</a>
+      <a href="reserve.html" class="btn btn-amber btn-sm">来店予約</a>
+      <label for="navToggle" class="nav-toggle" aria-label="メニューを開閉">☰</label>
+    </div>
+  </div>
+  <input type="checkbox" id="navToggle" class="nav-checkbox">
+  <nav class="subnav"><div class="container subnav-inner">
+    <a href="index.html">トップ</a>
+    <a href="inventory.html">在庫一覧</a>
+    <a href="reasons.html">選ばれる理由</a>
+    <a href="flow.html">ご利用の流れ</a>
+    <a href="store.html" class="is-current">店舗紹介</a>
+    <a href="reserve.html">来店予約</a>
+    <a href="inquiry.html">在庫問い合わせ</a>
+  </div></nav>
+</header>
+
+<div class="page-head"><div class="container"><h2 class="sec-title light-title">店舗紹介</h2></div></div>
+
+<section class="store">
+  <div class="store-hero"><img src="img/店舗紹介.jpg" alt="店舗外観" style="width:100%;height:100%;object-fit:cover"></div>
+  <p class="store-catch">地域の皆さまに愛される中古車販売店です</p>
+
+  <div class="container">
+    <h3 class="sub-title">スタッフ紹介</h3>
+    <div class="staff">
+      <figure><div class="avatar"><img src="img/staff-manager.png" alt="店長" style="width:100%;height:100%;object-fit:cover"></div><figcaption>店長<b>田中 一郎</b></figcaption></figure>
+      <figure><div class="avatar"><img src="img/staff-sales.png" alt="営業" style="width:100%;height:100%;object-fit:cover"></div><figcaption>営業<b>佐藤 恵</b></figcaption></figure>
+      <figure><div class="avatar"><img src="img/staff-mechanic.png" alt="整備士" style="width:100%;height:100%;object-fit:cover"></div><figcaption>整備士<b>鈴木 健一</b></figcaption></figure>
+    </div>
+
+    <h3 class="sub-title">会社概要</h3>
+    <table class="company-table">
+      <tr><th>会社名</th><td>オートガレージ</td><th>代表者</th><td>田中 一郎</td></tr>
+      <tr><th>設立</th><td>2022年2月</td><th>資本金</th><td>200万円</td></tr>
+      <tr><th>電話番号</th><td>0120-22-9238</td><th>営業時間</th><td>10:00〜19:00</td></tr>
+      <tr><th>所在地</th><td>〒176-0001 東京都練馬区練馬4-12-8（架空）</td><th>定休日</th><td>水曜日</td></tr>
+    </table>
+
+    <h3 class="sub-title">アクセス</h3>
+    <div class="access">
+      <div class="access-info">
+        <h3>最寄り駅・駐車場のご案内</h3>
+        <p>最寄り駅　西武池袋線「練馬」駅 徒歩8分（架空）</p>
+        <p>駐車場　店舗前に無料駐車場あり</p>
+        <p>お車でお越しの際もお気軽にお問い合わせください。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-info">
+      <h3>店舗案内</h3>
+      <p>オートガレージ</p>
+      <p>所在地　〒176-0001 東京都練馬区練馬4-12-8（架空）</p>
+      <p>営業時間　10:00〜19:00</p>
+      <p>電話　0120-22-9238</p>
+      <p>定休日　水曜日</p>
+    </div>
+    <div class="footer-photo"><img src="img/店舗紹介.jpg" alt="店舗外観"></div>
+    <div class="footer-map"><iframe src="https://maps.google.com/maps?q=35.7357,139.6539&z=15&output=embed" title="店舗所在地（架空）" loading="lazy"></iframe></div>
+  </div>
+  <div class="copyright">© オートガレージ All rights reserved.　※これは架空店舗の制作サンプルです</div>
+</footer>
+
+</body>
+</html>

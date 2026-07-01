@@ -1,0 +1,88 @@
+<!-- inventory.html : ② 在庫一覧（在庫一覧.jpg に忠実） -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>在庫一覧｜オートガレージ</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <svg viewBox="0 0 48 24" class="logo-car" aria-hidden="true"><path d="M3 18c0-1 1-2 2-2h2l3-6c.5-1 1.5-2 3-2h14c1.5 0 2.8.8 3.6 2l3.4 6h2c1 0 2 1 2 2v2h-4a3 3 0 0 1-6 0H13a3 3 0 0 1-6 0H3v-2z"/></svg>
+      <span class="logo-text">オートガレージ</span>
+    </a>
+    <div class="header-cta">
+      <a href="tel:0120229238" class="tel"><span class="tel-icon">📞</span>0120-22-9238</a>
+      <a href="reserve.html" class="btn btn-amber btn-sm">来店予約</a>
+      <label for="navToggle" class="nav-toggle" aria-label="メニューを開閉">☰</label>
+    </div>
+  </div>
+  <input type="checkbox" id="navToggle" class="nav-checkbox">
+  <nav class="subnav"><div class="container subnav-inner">
+    <a href="index.html">トップ</a>
+    <a href="inventory.html" class="is-current">在庫一覧</a>
+    <a href="reasons.html">選ばれる理由</a>
+    <a href="flow.html">ご利用の流れ</a>
+    <a href="store.html">店舗紹介</a>
+    <a href="reserve.html">来店予約</a>
+    <a href="inquiry.html">在庫問い合わせ</a>
+  </div></nav>
+</header>
+
+<div class="page-head"><div class="container"><h2 class="sec-title light-title">在庫一覧</h2></div></div>
+
+<section class="inventory">
+  <div class="container">
+    <!-- 絞り込み -->
+    <div class="filter-bar">
+      <select id="typeFilter">
+        <option value="all">ボディタイプ（すべて）</option>
+        <option value="軽自動車">軽自動車</option>
+        <option value="コンパクト">コンパクト</option>
+        <option value="ミニバン">ミニバン</option>
+        <option value="SUV">SUV</option>
+      </select>
+      <select id="priceFilter">
+        <option value="all">価格帯（すべて）</option>
+        <option value="-100">〜100万円</option>
+        <option value="100-150">100〜150万円</option>
+        <option value="150-">150万円〜</option>
+      </select>
+      <span class="btn btn-amber btn-sm">検索</span>
+    </div>
+
+    <!-- キャンペーンバナー -->
+    <section class="banner-wrap" style="padding:0 0 1.6rem;width:100vw;margin-left:calc(50% - 50vw)">
+      <img src="img/キャンペーンバナー.jpg" alt="ご来店予約限定 ガソリン券5,000円分プレゼント" class="banner-img">
+    </section>
+
+    <div class="car-grid" id="carGridFull"></div>
+    <div class="pager" id="pager"></div>
+    <div class="rotate-note"><span class="live-dot"></span> 在庫情報を自動更新中
+      <button id="pauseBtnList" class="pause-btn" type="button">一時停止</button></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-info">
+      <h3>店舗案内</h3>
+      <p>オートガレージ</p>
+      <p>所在地　〒176-0001 東京都練馬区練馬4-12-8（架空）</p>
+      <p>営業時間　10:00〜19:00</p>
+      <p>電話　0120-22-9238</p>
+      <p>定休日　水曜日</p>
+    </div>
+    <div class="footer-photo"><img src="img/店舗紹介.jpg" alt="店舗外観"></div>
+    <div class="footer-map"><iframe src="https://maps.google.com/maps?q=35.7357,139.6539&z=15&output=embed" title="店舗所在地（架空）" loading="lazy"></iframe></div>
+  </div>
+  <div class="copyright">© オートガレージ All rights reserved.　※これは架空店舗の制作サンプルです</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

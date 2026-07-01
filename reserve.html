@@ -1,0 +1,81 @@
+<!-- reserve.html : ⑦ 来店予約フォーム（来店予約フォーム.jpg に忠実） -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>来店予約｜オートガレージ</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <svg viewBox="0 0 48 24" class="logo-car" aria-hidden="true"><path d="M3 18c0-1 1-2 2-2h2l3-6c.5-1 1.5-2 3-2h14c1.5 0 2.8.8 3.6 2l3.4 6h2c1 0 2 1 2 2v2h-4a3 3 0 0 1-6 0H13a3 3 0 0 1-6 0H3v-2z"/></svg>
+      <span class="logo-text">オートガレージ</span>
+    </a>
+    <div class="header-cta">
+      <a href="tel:0120229238" class="tel"><span class="tel-icon">📞</span>0120-22-9238</a>
+      <a href="reserve.html" class="btn btn-amber btn-sm">来店予約</a>
+      <label for="navToggle" class="nav-toggle" aria-label="メニューを開閉">☰</label>
+    </div>
+  </div>
+  <input type="checkbox" id="navToggle" class="nav-checkbox">
+  <nav class="subnav"><div class="container subnav-inner">
+    <a href="index.html">トップ</a>
+    <a href="inventory.html">在庫一覧</a>
+    <a href="reasons.html">選ばれる理由</a>
+    <a href="flow.html">ご利用の流れ</a>
+    <a href="store.html">店舗紹介</a>
+    <a href="reserve.html" class="is-current">来店予約</a>
+    <a href="inquiry.html">在庫問い合わせ</a>
+  </div></nav>
+</header>
+
+<section class="form-section">
+  <div class="container">
+    <h2 class="sec-title light-title">来店予約</h2>
+    <p class="sec-lead light-lead">ご希望の日時をご入力ください</p>
+    <form class="form-card" onsubmit="return submitForm(event,'来店予約')">
+      <div class="form-card-head">来店予約フォーム</div>
+      <div class="form-card-body">
+        <label>お名前<input type="text" name="name" required></label>
+        <label>電話番号<input type="tel" name="tel" required></label>
+        <label>メールアドレス<input type="email" name="email"></label>
+        <label>ご希望日<input type="date" name="date"></label>
+        <label>ご希望時間帯
+          <select name="time"><option>10:00〜12:00</option><option>12:00〜14:00</option><option>14:00〜16:00</option><option>16:00〜18:00</option></select>
+        </label>
+        <label>ご希望車種<input type="text" name="car"></label>
+        <label>ご来店人数
+          <select name="people"><option>1名</option><option>2名</option><option>3名</option><option>4名以上</option></select>
+        </label>
+        <label>ご要望・ご質問<textarea name="message" rows="4"></textarea></label>
+        <button type="submit" class="btn btn-amber btn-block">この内容で予約する</button>
+        <p style="text-align:center;font-size:.8rem;color:#8b97ac;margin-top:.8rem">※これはデモです。実際には送信されません</p>
+      </div>
+    </form>
+    <p class="form-switch">在庫・車両についてのご相談は <a href="inquiry.html">在庫問い合わせフォーム</a> へ</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-info">
+      <h3>店舗案内</h3>
+      <p>オートガレージ</p>
+      <p>所在地　〒176-0001 東京都練馬区練馬4-12-8（架空）</p>
+      <p>営業時間　10:00〜19:00</p>
+      <p>電話　0120-22-9238</p>
+      <p>定休日　水曜日</p>
+    </div>
+    <div class="footer-photo"><img src="img/店舗紹介.jpg" alt="店舗外観"></div>
+    <div class="footer-map"><iframe src="https://maps.google.com/maps?q=35.7357,139.6539&z=15&output=embed" title="店舗所在地（架空）" loading="lazy"></iframe></div>
+  </div>
+  <div class="copyright">© オートガレージ All rights reserved.　※これは架空店舗の制作サンプルです</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

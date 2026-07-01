@@ -1,0 +1,97 @@
+<!-- index.html : ① TOP（TOP.jpg に忠実） -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>オートガレージ｜中古車販売・在庫一覧・来店予約</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <svg viewBox="0 0 48 24" class="logo-car" aria-hidden="true"><path d="M3 18c0-1 1-2 2-2h2l3-6c.5-1 1.5-2 3-2h14c1.5 0 2.8.8 3.6 2l3.4 6h2c1 0 2 1 2 2v2h-4a3 3 0 0 1-6 0H13a3 3 0 0 1-6 0H3v-2z"/></svg>
+      <span class="logo-text">オートガレージ</span>
+    </a>
+    <div class="header-cta">
+      <a href="tel:0120229238" class="tel"><span class="tel-icon">📞</span>0120-22-9238</a>
+      <a href="reserve.html" class="btn btn-amber btn-sm">来店予約</a>
+      <label for="navToggle" class="nav-toggle" aria-label="メニューを開閉">☰</label>
+    </div>
+  </div>
+  <input type="checkbox" id="navToggle" class="nav-checkbox">
+  <nav class="subnav"><div class="container subnav-inner">
+    <a href="index.html" class="is-current">トップ</a>
+    <a href="inventory.html">在庫一覧</a>
+    <a href="reasons.html">選ばれる理由</a>
+    <a href="flow.html">ご利用の流れ</a>
+    <a href="store.html">店舗紹介</a>
+    <a href="reserve.html">来店予約</a>
+    <a href="inquiry.html">在庫問い合わせ</a>
+  </div></nav>
+</header>
+
+<!-- ヒーロー -->
+<section class="hero">
+  <div class="hero-slides">
+    <div class="hero-slide"></div>
+    <div class="hero-slide"></div>
+    <div class="hero-slide"></div>
+  </div>
+  <div class="container">
+    <h1 class="hero-title">あなたにぴったりの一台を</h1>
+    <p class="hero-sub">軽自動車・コンパクト・ミニバン・SUV　豊富な在庫からお選びいただけます</p>
+    <div class="hero-btns">
+      <a href="reserve.html" class="btn btn-amber btn-lg">来店予約</a>
+      <a href="inquiry.html" class="btn btn-amber btn-lg">在庫問い合わせ</a>
+    </div>
+  </div>
+</section>
+
+<!-- 強み3点 -->
+<section class="strengths">
+  <div class="container grid-3">
+    <div class="s-card"><img class="s-icon-img" src="img/top_ic_quality.jpg" alt=""><h3>品質保証</h3><p>修復歴・品質をチェック済み。安心してお乗りいただけます。</p></div>
+    <div class="s-card"><img class="s-icon-img" src="img/top_ic_maintained.jpg" alt=""><h3>全車整備済</h3><p>専門の整備士が点検・整備をしてからお渡しします。</p></div>
+    <div class="s-card"><img class="s-icon-img" src="img/top_ic_consult.jpg" alt=""><h3>無料相談</h3><p>予算やローンのご相談もお気軽にどうぞ。無料でご対応します。</p></div>
+  </div>
+</section>
+
+<!-- 最新入庫車（自動入れ替え） -->
+<section class="inventory">
+  <div class="container">
+    <h2 class="sec-title">最新入庫車</h2>
+    <p class="sec-lead">在庫は随時入れ替わります。気になるお車はお早めにお問い合わせください。</p>
+    <div class="car-grid" id="carGrid"></div>
+    <div style="text-align:center;margin-top:1.6rem">
+      <a href="inventory.html" class="btn btn-amber btn-lg">在庫をすべて見る</a>
+    </div>
+  </div>
+</section>
+
+<!-- セールバナー -->
+<section class="banner-wrap">
+  <img src="img/sale-banner.jpg" alt="在庫一掃 大商談会 セール開催中" class="banner-img">
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-info">
+      <h3>店舗案内</h3>
+      <p>オートガレージ</p>
+      <p>所在地　〒176-0001 東京都練馬区練馬4-12-8（架空）</p>
+      <p>営業時間　10:00〜19:00</p>
+      <p>電話　0120-22-9238</p>
+      <p>定休日　水曜日</p>
+    </div>
+    <div class="footer-photo"><img src="img/店舗紹介.jpg" alt="店舗外観"></div>
+    <div class="footer-map"><iframe src="https://maps.google.com/maps?q=35.7357,139.6539&z=15&output=embed" title="店舗所在地（架空）" loading="lazy"></iframe></div>
+  </div>
+  <div class="copyright">© オートガレージ All rights reserved.　※これは架空店舗の制作サンプルです</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
