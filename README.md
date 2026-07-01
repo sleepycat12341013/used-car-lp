@@ -4,6 +4,16 @@
 
 🔗 **公開URL:** https://sleepycat12341013.github.io/used-car-lp/
 
+## スクリーンショット
+
+**デスクトップ版:**
+
+![デスクトップ版](img/screenshot-desktop.png)
+
+**スマホ版:**
+
+<img src="img/screenshot-mobile.png" alt="スマホ版" width="320">
+
 ## 構成
 - HTML / CSS / Vanilla JavaScript（フレームワーク不使用）
 - 8ページ：トップ / 在庫一覧 / 車両詳細 / 選ばれる理由 / ご利用の流れ / 店舗紹介 / 来店予約 / 在庫問い合わせ
